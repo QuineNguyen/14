@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo/Chỉnh sửa Kỳ thi</title>
+    <link rel="stylesheet" href="createtest.css">
+</head>
+    <body>
+    <div id="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Logo_PTIT_University.png/800px-Logo_PTIT_University.png" alt="PTIT logo" class="image">
+        <h1>Tạo/Chỉnh sửa Kỳ thi</h1>
+        <form id="examForm">
+            <label for="examName">Tên kỳ thi:</label>
+            <input type="text" id="examName" name="examName" required>
+
+            <label for="description">Mô tả:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+
+            <label for="examType">Loại kỳ thi:</label>
+            <select id="examType" name="examType">
+                <option value="1">Luyện tập</option>
+                <option value="2">Giữa kỳ</option>
+                <option value="3">Cuối kỳ</option>
+            </select>
+
+            <h3>Danh sách câu hỏi:</h3>
+            <div id="questionList">
+                <!-- Các câu hỏi được thêm vào đây bằng JavaScript -->
+            </div>
+        </form>
+        <div class="button-container">
+            <button type="button" onclick="addQuestion()">Thêm câu hỏi</button>
+            <button id="submit">Nộp</button>
+            <a href="admin.html" title="Quay lai trang chu">
+                <button id="home">Trở về trang chủ Admin</button>    
+            </a>
+        </div>
+    </div>
+    </body>
+</html>

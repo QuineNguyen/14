@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTIT Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLqUDgiQMKLWQi3Z6gdoenj9sJP4SEGN0iqly8teVdfERq70y8rzGGXVvIzcbpIYudH8&usqp=CAU" alt="PTIT logo" class="header-logo">
+        <h1>PTIT Admin Dashboard</h1>
+        <button id="log-out">Đăng xuất</div>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Quản lý kỳ thi</h2>
+            <button class="add-button" onclick="showAddExamForm()">Thêm mới</button>
+            <div id="examList"></div>
+        </div>
+        <div class="section">
+            <h2>Quản lý người dùng</h2>
+            <button class="add-button" onclick="showAddUserForm()">Thêm mới</button>
+            <div id="userList"></div>
+        </div>
+        <div class="section">
+            <h2>Xem thống kê</h2>
+            <button class="add-button" onclick="showStatistics()">Xem thống kê</button>
+            <div id="statistics"></div>
+        </div>
+    </div>
+    <button id="createAlterTest">Tạo/Chỉnh sửa kỳ thi</button>
+    <button id="statistic">Thống kê kết quả</button>
+    <button id="studentResults">Kết quả của từng sinh viên</button>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+  
+header {
+    background-color: #ff3c3c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+  
+.exam-list {
+    margin: 20px;
+}
+  
+.exam {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.exam h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+  
+.exam p {
+    margin-bottom: 15px;
+}
+  
+.exam .status {
+    font-weight: normal;
+    display: inline-flexbox;
+}
+  
+.exam .start-btn {
+    background-color: #f12d2d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+  
+.exam .start-btn:hover {
+    background-color: #ffe4e4;
+    color: black;
+}
+.image
+{
+    display: block;
+    width: 50px;
+}
+header input[type="text"] {
+    width: 200px; /* Điều chỉnh chiều rộng của thanh tìm kiếm */
+}
+.search-bar button {
+    padding: 4px 6px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #100a0a;
+    height: 32px;
+    margin-left: 12px;
+    border-radius: 8px;
+}
+  
+.search-bar button:hover {
+    background-color: #ffe4e4;
+    color: black;
+    filter: saturate(200%);
+}
+#log-out {
+    padding: 4px 6px;
+    background-color: #100a0a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 32px;
+    margin-right: 27px;
+}
+#log-out:hover {
+    background-color: #ffe4e4;
+    color: black;
+}
+#searchInput {
+    border-radius: 5px;
+    border: #f12d2d;
+    height: 30px;
+}
+#statusFilter {
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    height: 30px;
+    border: white;
+}

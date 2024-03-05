@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f12d2d;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#filter {
+    margin-bottom: 20px;
+}
+
+#statistics {
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #f12d2d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffe4e4;
+    color: black;
+}
+#exam {
+    border-radius: 5px;
+    height: 30px;
+}
+table {
+    width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng của phần tử chứa nó */
+    border-collapse: collapse; /* Gộp các đường viền của ô lại với nhau */
+    margin: 0 auto; /* Đây là cách để căn giữa bảng theo chiều ngang */
+}
+
+th, td {
+    padding: 8px; /* Khoảng cách giữa nội dung và đường viền của ô */
+    text-align: center; /* Căn giữa nội dung trong ô */
+    border: 1px solid #ddd; /* Đường viền của ô */
+}
+
+th {
+    background-color: #f2f2f2; /* Màu nền cho ô tiêu đề */
+}
+
+/* Định dạng cho hàng lẻ của bảng */
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Màu nền cho hàng lẻ */
+}
+.image
+{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+hr {
+    border: 1px solid #f90303; /* Màu và kiểu đường kẻ */
+    margin: 20px 0; /* Khoảng cách trên và dưới của đường kẻ */
+}
+/* Chart layout */
+.chart-layout {
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chart-layout__item {
+    align-self: flex-end; /* Dồn hết item về cross-end */
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent); /* Bằng số phần trăm của content */
+    background-color: #EF5122;
+    animation: growth ease-in 1s;
+}
+
+@keyframes growth {
+    from {
+        opacity: 0; /* Độ trong suốt */
+        height: calc(var(--percent) - 50%);
+    }
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
+}

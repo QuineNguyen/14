@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chính</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLqUDgiQMKLWQi3Z6gdoenj9sJP4SEGN0iqly8teVdfERq70y8rzGGXVvIzcbpIYudH8&usqp=CAU" alt="PTIT logo" class="image" style="border-radius: 10px;">
+        <h1>PTIT - Danh sách Kỳ Thi</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm...">
+            <button id="searchButton">Tìm kiếm</button>
+        </div>
+        <button id="log-out">Đăng xuất</button>
+    </header>
+    <select id="statusFilter">
+        <option value="all">Tất cả trạng thái</option>
+        <option value="open">Mở</option>
+        <option value="closed">Đóng</option>
+    </select>
+    <div id="examsList" class="exam-list">
+        <!-- Danh sách các kỳ thi sẽ được hiển thị ở đây -->
+    </div>
+
+    <script src="welcome.js"></script>
+</body>
+</html>

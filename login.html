@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang Đăng nhập và Đăng ký</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Logo_PTIT_University.png" alt="PTIT logo" class="login-image">
+            <h2>Đăng nhập</h2>
+            <div class="login-fields">
+                <input type="text" id="loginUsername" placeholder="Tên đăng nhập" required>
+                <br>
+                <input type="password" id="loginPassword" placeholder="Mật khẩu" required>
+                <br>
+                <button type="submit">Đăng nhập</button>
+            </div>
+            <div class="error" id="loginErrorMessage" style="display: none;">Tài khoản hoặc mật khẩu không chính xác. Vui lòng đăng nhập lại.</div>
+            <div class="success" id="loginSuccessMessage" style="display: none;">Đăng nhập thành công!</div>
+            <div class="register-link">
+                <p>Bạn chưa có tài khoản? <a href="#" id="showRegisterForm">Đăng ký ngay</a></p>
+            </div>
+        </form>
+        <form id="registerForm" style="display: none;">
+            <h2>Đăng ký</h2>
+            <input type="text" id="registerUsername" placeholder="Tên người dùng" required>
+            <br>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <br>
+            <input type="password" id="registerPassword" placeholder="Mật khẩu" required>
+            <br>
+            <input type="password" id="confirmPassword" placeholder="Xác nhận mật khẩu" required>
+            <br>
+            <div class="error" id="registerErrorMessage" style="display: none;">Mật khẩu nhập lại không khớp.</div>
+            <div class="success" id="registerSuccessMessage" style="display: none;">Đăng ký thành công! Vui lòng đăng nhập.</div>
+            <button type="submit">Đăng ký</button>
+            <div class="register-link">
+                <p>Đã có tài khoản? <a href="#" id="showLoginForm">Đăng nhập</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

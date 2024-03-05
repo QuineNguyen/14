@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thống kê</title>
+    <link rel="stylesheet" href="statistic.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Logo_PTIT_University.png/800px-Logo_PTIT_University.png" alt="PTIT logo" class="image">
+        <h1 style="color: red;">Thống kê kết quả kỳ thi</h1>
+        <div id="statistics">
+          <h2 style="font-weight: normal;">Bảng thống kê tổng hợp kết quả</h2>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Kỳ thi</th>
+                <th>Điểm</th>
+                <th>Ngày thi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>Kỳ thi luyện tập</td>
+                <td>8.5</td>
+                <td>15/01/2024</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Trần Thị B</td>
+                <td>Kỳ thi giữa kỳ</td>
+                <td>7.8</td>
+                <td>20/02/2024</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Phạm Văn C</td>
+                <td>Kỳ thi cuối kỳ</td>
+                <td>9.0</td>
+                <td>01/03/2024</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <h2 style="font-weight: normal;">Thống kê tổng hợp</h2>
+          <p><strong>Tổng số lần tham gia:</strong> <span id="totalParticipants">0</span></p>
+          <p><strong>Tỷ lệ hoàn thành:</strong> <span id="completedParticipants">0</span></p>
+          <p><strong>Điểm trung bình:</strong> <span id="averageScore">0</span></p>
+          <!-- Chart -->
+          <div class="chart-layout">
+            <div class="chart-layout__item" style="--percent: 10%">
+              <span>10%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 20%">
+              <span>20%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 40%">
+              <span>40%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 90%">
+              <span>90%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 80%">
+              <span>80%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 40%">
+              <span>40%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 10%">
+              <span>10%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 20%">
+              <span>20%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 69%">
+              <span>69%</span>
+            </div>
+            <div class="chart-layout__item" style="--percent: 96%">
+              <span>96%</span>
+            </div>
+          </div>
+        </div>          
+        <button onclick="exportToPDF()">Xuất báo cáo PDF</button>
+        <button onclick="exportToExcel()">Xuất báo cáo Excel</button>
+        <button id="home" onclick="redirectToAdminPage()">Trở về trang chủ Admin</button>
+    </div>
+
+<script src="statistic.js"></script>
+</body>
+</html>
